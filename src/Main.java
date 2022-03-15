@@ -1,15 +1,25 @@
+import uaslp.objetos.list.Iterator;
+import uaslp.objetos.list.List;
 import uaslp.objetos.list.arraylist.ArrayList;
-import uaslp.objetos.list.arraylist.ArrayListIterator;
 import uaslp.objetos.list.linkedlist.LinkedList;
-import uaslp.objetos.list.linkedlist.LinkedListIterator;
 
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList team1 = new ArrayList();
-        ArrayList team2 = new ArrayList();
-        ArrayList team3 = new ArrayList();
+        List team1 = new ArrayList();
+        List team2 = new ArrayList();
+        List team3 = new ArrayList();
 
+        List team4 = new LinkedList();
+        List team5 = new LinkedList();
+        List team6 = new LinkedList();
+
+        list(team1,team2,team3);
+        System.out.println("------------------------------------------------");
+        list(team4,team5,team6);
+    }
+
+    private static void list (List team1, List team2, List team3) {
         team1.addAtTail("Jesús");
         team1.addAtTail("Salomón");
         team1.addAtTail("Yael");
@@ -20,7 +30,7 @@ public class Main {
 
         team3.addAtFront("Imelda");
 
-        ArrayListIterator iterator;
+        Iterator iterator;
 
         iterator = team1.getIterator();
 
@@ -114,12 +124,6 @@ public class Main {
         // Rebeca
         // Luis
         // Yael
-
-
     }
 }
-
-/////////////////////////////////////////////////////////
-//              Prueba arraylist
-/////////////////////////////////////////////////////////
 

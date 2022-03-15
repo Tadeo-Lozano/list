@@ -1,4 +1,6 @@
 package uaslp.objetos.list;
 
-public interface Iteratir {
+public interface Iterator{
+    boolean hasNext();
+    String next();
 }
