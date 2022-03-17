@@ -6,20 +6,14 @@ import uaslp.objetos.list.linkedlist.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        List team1 = new ArrayList();
-        List team2 = new ArrayList();
-        List team3 = new ArrayList();
+        List<String> team1 = new ArrayList<>();
+        List<String> team2 = new ArrayList<>();
+        List<String> team3 = new LinkedList<>();
 
-        List team4 = new LinkedList();
-        List team5 = new LinkedList();
-        List team6 = new LinkedList();
-
-        list(team1,team2,team3);
-        System.out.println("------------------------------------------------");
-        list(team4,team5,team6);
+        generic(team1, team2, team3);
     }
 
-    private static void list (List team1, List team2, List team3) {
+    private static void generic(List<String> team1, List<String> team2, List<String> team3) {
         team1.addAtTail("Jesús");
         team1.addAtTail("Salomón");
         team1.addAtTail("Yael");
@@ -30,7 +24,7 @@ public class Main {
 
         team3.addAtFront("Imelda");
 
-        Iterator iterator;
+        Iterator<String> iterator;
 
         iterator = team1.getIterator();
 
@@ -127,3 +121,6 @@ public class Main {
     }
 }
 
+/////////////////////////////////////////////////////////
+//              Prueba arraylist
+/////////////////////////////////////////////////////////

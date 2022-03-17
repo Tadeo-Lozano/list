@@ -2,19 +2,19 @@ package uaslp.objetos.list;
 
 public interface List <T>{
 
-    void addAtTail(String data);
+    void addAtTail(T data);
 
-    void addAtFront(String data);
+    void addAtFront(T data);
 
     void remove(int index);
 
     void removeAll();
 
-    void setAt(int index, String data);
+    void setAt(int index, T data);
 
-    String getAt(int index);
+    T getAt(int index);
 
-    Iterator getIterator();
+    Iterator<T> getIterator();
 
     int getSize();
 }
