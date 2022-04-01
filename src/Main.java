@@ -1,19 +1,34 @@
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
 import uaslp.objetos.list.arraylist.ArrayList;
+import uaslp.objetos.list.exception.NotNullValuesAllowedException;
+import uaslp.objetos.list.exception.NotValidIndexException;
 import uaslp.objetos.list.linkedlist.LinkedList;
 
 public class Main {
 
-    public static void main(String[] args) {
-        List<String> team1 = new ArrayList<>();
-        List<String> team2 = new ArrayList<>();
+    public static void main(String[] args){
+        List<String> team1 = new LinkedList<>();
+        List<String> team2 = new LinkedList<>();
         List<String> team3 = new LinkedList<>();
 
-        generic(team1, team2, team3);
+        try{
+            generic(team1, team2, team3);
+        }catch (NotValidIndexException ex){
+            System.out.println(ex.getMessage());
+        }catch (NotNullValuesAllowedException ex){
+            System.out.println(ex.getMessage());
+        }
+
+
+        System.out.println("El programa no ha fallado");
+
     }
 
-    private static void generic(List<String> team1, List<String> team2, List<String> team3) {
+    public static void generic(List<String> team1, List<String> team2, List<String> team3) throws NotValidIndexException, NotNullValuesAllowedException {
+        //team1.remove(5);
+        team1.addAtFront(null);
+
         team1.addAtTail("Jesús");
         team1.addAtTail("Salomón");
         team1.addAtTail("Yael");

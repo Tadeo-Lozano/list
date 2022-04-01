@@ -41,7 +41,7 @@ public class ArrayList <T> implements List<T>{
     }
 
     @Override
-    public void remove(int index) {
+    public void remove(int index){
         if(index < 0 || index >= size){
             return;
         }
