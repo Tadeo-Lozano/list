@@ -4,7 +4,6 @@ import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
 import uaslp.objetos.list.exception.NotNullValuesAllowedException;
 import uaslp.objetos.list.exception.NotValidIndexException;
-import uaslp.objetos.list.exception.NotValidIndexException;
 
 public class LinkedList <T> implements List <T>{
     private Node<T> head;
@@ -50,10 +49,6 @@ public class LinkedList <T> implements List <T>{
 
     public void remove(int index) throws NotValidIndexException{
         Node<T> node = findNode(index);
-
-        if(node == null){
-            return;
-        }
 
         if(size == 1){
             head = null;
