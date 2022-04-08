@@ -1,7 +1,7 @@
 package uaslp.objetos.list.linkedlist;
 
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.exception.NotNullValuesAllowedException;
 import uaslp.objetos.list.exception.NotValidIndexException;
