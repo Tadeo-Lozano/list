@@ -219,7 +219,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void givenAListWithThreeElements_whenGetIterator_thenIteratorWorksOverAllThreeElements() throws NotNullValuesAllowedException{
+    public void givenAListWithThreeElements_whenGetIterator_thenIteratorWorksOverAllThreeElements() throws NotNullValuesAllowedException, NotValidIndexException {
         //Given:
         LinkedList<String> list = new LinkedList<>();
 

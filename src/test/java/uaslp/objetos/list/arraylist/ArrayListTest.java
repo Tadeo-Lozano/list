@@ -106,7 +106,7 @@ public class ArrayListTest {
     }
 
     @Test
-    public void givenAListWithThreeElements_whenGetIterator_thenIteratorWorksOverAllThreeElements() throws NotNullValuesAllowedException{
+    public void givenAListWithThreeElements_whenGetIterator_thenIteratorWorksOverAllThreeElements() throws NotNullValuesAllowedException, NotValidIndexException {
         //Given:
         ArrayList<String> list = new ArrayList<>();
 
