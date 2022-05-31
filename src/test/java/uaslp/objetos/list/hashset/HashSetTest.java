@@ -130,6 +130,7 @@ public class HashSetTest {
             //hice el for hasta 100 para encontrarlo
         }
         //hs.add("a83");  -> Este fue el dato que encontre que lograba entrar en ese if
+        //no encontre otra forma de entrar
 
 
         //Then
